@@ -15,9 +15,6 @@
         <property name="hibernate.cache.use_second_level_cache">true</property>
         <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
 
-        <mapping class="org.example.entities.Department"/>
-        <mapping class="org.example.entities.Employee"/>
-        <mapping class="org.example.entities.Manager"/>
-        <mapping class="org.example.entities.Project"/>
+        <mapping package="org.example.entities"/>
     </session-factory>
 </hibernate-configuration>
